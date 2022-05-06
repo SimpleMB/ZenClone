@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,oFAAI",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/_imports.scss",
+        "../sass/_variables.scss",
+        "../sass/_reset.scss",
+        "../sass/_global.scss",
+        "../sass/_header.scss",
+        "../sass/_main.scss",
+        "../sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
