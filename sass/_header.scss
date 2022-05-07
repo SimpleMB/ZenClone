@@ -1,0 +1,49 @@
+header {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.top-list {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  list-style: none;
+
+  li {
+    margin: 0 10px;
+
+    a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: $font-semibold;
+      color: $primary-black-color;
+    }
+  }
+}
+
+.right-side--btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border-color: $primary-black-color;
+  background-color: $button-light-color;
+  font-weight: $font-bold;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 8px 0px rgba(66, 68, 90, 0.3);
+  }
+}
