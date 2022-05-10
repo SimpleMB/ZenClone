@@ -21,7 +21,7 @@ header {
   margin-left: 30px;
   list-style: none;
 
-  li {
+  .menu-link {
     margin: 0 10px;
 
     a {
@@ -38,12 +38,39 @@ header {
   padding: 10px 20px;
   border-radius: 50px;
   border-color: $primary-black-color;
-  background-color: $button-light-color;
+  background-color: $secondary-light-color;
   font-weight: $font-bold;
   font-size: 16px;
   cursor: pointer;
 
   &:hover {
     box-shadow: 0px 0px 8px 0px rgba(66, 68, 90, 0.3);
+  }
+}
+
+.lang-link {
+  position: relative;
+}
+
+.lang-list {
+  visibility: hidden; // TODO: javascript toggle
+  position: absolute;
+  right: 0;
+  padding: 10px 0;
+  width: 180px;
+  list-style: none;
+  border: 1px solid $primary-gray-color;
+  background-color: $secondary-light-color;
+  z-index: 1000;
+}
+
+.lang-sublink {
+  margin: 0;
+  padding: 15px ;
+  font-size: $font-size-normal;
+
+  &:hover {
+    background-color: $secondary-lightgray-color;
+    cursor: pointer;
   }
 }
