@@ -1,21 +1,26 @@
-header {
-  max-width: $desktop-width;
-  margin: 0 auto;
+.menu-container-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-.top-bar {
+.top-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 50px;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 100%;
+  background-color: $secondary-light-color;
 }
 
 .left-side {
   display: flex;
 }
 
-.top-list {
+.menu-list {
   display: flex;
   align-items: center;
   margin-left: 30px;
@@ -66,7 +71,7 @@ header {
 
 .lang-sublink {
   margin: 0;
-  padding: 15px ;
+  padding: 15px;
   font-size: $font-size-normal;
 
   &:hover {
