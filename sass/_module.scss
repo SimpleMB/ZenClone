@@ -1,0 +1,53 @@
+.module {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 20px 0;
+    max-width: $desktop-width;
+    height: 750px;
+  }
+  
+  .module-message {
+    width: 40%;
+    margin-top: 70px;
+    h1 {
+      font-size: $font-size-header;
+      font-weight: $font-bold;
+    }
+
+    h2 {
+      font-size: $font-size-big;
+    }
+  
+    p {
+      margin: 20px 0;
+      line-height: 150%;
+      font-size: $font-size-normal;
+    }
+  }
+  
+  .module-img {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  
+  .get-app {
+    width: 90%;
+  }
+  
+  .get-app--img {
+    margin: 10px 10px 10px 0;
+    width: 170px;
+  }
+
+  .pay-mark {
+    
+  }
+
+  .pay-mark--img {
+    margin: 10px 10px 10px 0;
+    height: 60px;
+  }
