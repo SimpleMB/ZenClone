@@ -35,15 +35,38 @@ button:focus, input:focus {
 }
 
 .module-middle {
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: unset;
+  margin-bottom: 50px;
 }
 
 .module-middle .module-message {
+  margin: 70px auto;
   width: 50%;
   text-align: center;
+}
+
+.module-middle .module-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.module-middle .module-partners a {
+  padding: 20px;
 }
 
 .module-message {

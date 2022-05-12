@@ -9,12 +9,28 @@
   }
 
   .module-middle {
+    display: block;
     justify-content: center;
     height: unset;
+    margin-bottom: 50px;
 
     .module-message {
+      margin: 70px auto;
       width: 50%;
       text-align: center;
+    }
+
+    .module-partners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 80%;
+
+      a {
+        padding: 20px;
+      }
     }
   }
   
