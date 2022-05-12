@@ -5,7 +5,17 @@
     margin: 0 auto;
     padding: 70px 20px 0;
     max-width: $desktop-width;
-    height: 750px;
+    // height: 750px;
+  }
+
+  .module-middle {
+    justify-content: center;
+    height: unset;
+
+    .module-message {
+      width: 50%;
+      text-align: center;
+    }
   }
   
   .module-message {
@@ -41,10 +51,6 @@
   .get-app--img {
     margin: 10px 10px 10px 0;
     width: 170px;
-  }
-
-  .pay-mark {
-    
   }
 
   .pay-mark--img {
