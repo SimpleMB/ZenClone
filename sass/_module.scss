@@ -1,75 +1,91 @@
 .module {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 70px 20px 0;
+  max-width: $desktop-width;
+  // height: 750px;
+}
+
+.module-middle {
+  display: block;
+  justify-content: center;
+  height: unset;
+  margin-bottom: 50px;
+
+  .module-message {
+    margin: 70px auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .module-partners {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
-    padding: 70px 20px 0;
-    max-width: $desktop-width;
-    // height: 750px;
-  }
-
-  .module-middle {
-    display: block;
-    justify-content: center;
-    height: unset;
-    margin-bottom: 50px;
-
-    .module-message {
-      margin: 70px auto;
-      width: 50%;
-      text-align: center;
-    }
-
-    .module-partners {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      width: 80%;
-
-      a {
-        padding: 20px;
-      }
-    }
-  }
-  
-  .module-message {
-    width: 40%;
-    margin-top: 70px;
-    h1 {
-      font-size: $font-size-header;
-      font-weight: $font-bold;
-    }
-
-    h2 {
-      font-size: $font-size-big;
-    }
-  
-    p {
-      margin: 20px 0;
-      line-height: 150%;
-      font-size: $font-size-normal;
-    }
-  }
-  
-  .module-img {
-    width: 50%;
-    img {
-      width: 100%;
-    }
-  }
-  
-  .get-app {
     width: 90%;
+
+    .partners-container {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: $secondary-light-color;
+    }
+
+    .partners-container::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 50px;
+      background: linear-gradient(
+        90deg,
+        $primary-gray-color,
+        $secondary-light-color
+      );
+      z-index: -1;
+      filter: blur(20px);
+    }
   }
-  
-  .get-app--img {
-    margin: 10px 10px 10px 0;
-    width: 170px;
+}
+
+.module-message {
+  width: 40%;
+  margin-top: 70px;
+  h1 {
+    font-size: $font-size-header;
+    font-weight: $font-bold;
   }
 
-  .pay-mark--img {
-    margin: 10px 10px 10px 0;
-    height: 60px;
+  h2 {
+    font-size: $font-size-big;
   }
+
+  p {
+    margin: 20px 0;
+    line-height: 150%;
+    font-size: $font-size-normal;
+  }
+}
+
+.module-img {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.get-app {
+  width: 90%;
+}
+
+.get-app--img {
+  margin: 10px 10px 10px 0;
+  width: 170px;
+}
+
+.pay-mark--img {
+  margin: 10px 10px 10px 0;
+  height: 60px;
+}

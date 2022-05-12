@@ -62,11 +62,25 @@ button:focus, input:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
-.module-middle .module-partners a {
+.module-middle .module-partners .partners-container {
+  margin-bottom: 20px;
   padding: 20px;
+  background-color: white;
+}
+
+.module-middle .module-partners .partners-container::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#ababab), to(white));
+  background: linear-gradient(90deg, #ababab, white);
+  z-index: -1;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
 }
 
 .module-message {
