@@ -3,6 +3,19 @@
   width: 100%;
   top: 0;
   left: 0;
+  padding: 40px 0;
+  background-color: $secondary-light-color;
+}
+
+.top-menu-logo {
+  transition: all 1s;
+}
+
+.menu-container-fixed.scrolled {
+  border-bottom: 1px solid $accent-gray-color;
+  .top-menu-logo {
+    transform: scale(0.7);
+  }
 }
 
 .top-menu {
@@ -11,9 +24,7 @@
   align-items: center;
   max-width: $desktop-width;
   margin: 0 auto;
-  padding: 50px 0;
   width: 100%;
-  background-color: $secondary-light-color;
 }
 
 .left-side {

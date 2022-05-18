@@ -130,6 +130,22 @@ button:focus, input:focus {
   width: 100%;
   top: 0;
   left: 0;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.top-menu-logo {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menu-container-fixed.scrolled {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.menu-container-fixed.scrolled .top-menu-logo {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .top-menu {
@@ -144,9 +160,7 @@ button:focus, input:focus {
           align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
   width: 100%;
-  background-color: white;
 }
 
 .left-side {
