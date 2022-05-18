@@ -1,9 +1,9 @@
 footer {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 70px  0 100px;
+  margin: 100px auto;
+  padding: 20px  0;
   max-width: $desktop-width;
+  border-top: 1px solid $accent-gray-color;
 
   h3 {
      font-size: $font-size-menu;
@@ -13,6 +13,7 @@ footer {
 }
 
 .footer-list {
+    width: 200px;
     list-style: none;
 }
 
