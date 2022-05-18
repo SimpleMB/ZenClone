@@ -6,7 +6,7 @@ html {
 }
 
 button:focus, input:focus {
-    outline: none;
+    outline: $primary-gray-color;
 }
 
 @import "module"

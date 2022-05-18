@@ -16,7 +16,7 @@ html {
 }
 
 button:focus, input:focus {
-  outline: none;
+  outline: #ababab;
 }
 
 .module {
