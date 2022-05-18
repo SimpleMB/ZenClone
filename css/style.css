@@ -16,7 +16,7 @@ html {
 }
 
 button:focus, input:focus {
-  outline: #ababab;
+  outline: #b3b3b3;
 }
 
 .module {
@@ -76,8 +76,8 @@ button:focus, input:focus {
   position: absolute;
   width: 70px;
   height: 50px;
-  background: -webkit-gradient(linear, left top, right top, from(#ababab), to(white));
-  background: linear-gradient(90deg, #ababab, white);
+  background: -webkit-gradient(linear, left top, right top, from(#b3b3b3), to(white));
+  background: linear-gradient(90deg, #b3b3b3, white);
   z-index: -1;
   -webkit-filter: blur(20px);
           filter: blur(20px);
@@ -218,7 +218,7 @@ button:focus, input:focus {
   padding: 10px 0;
   width: 180px;
   list-style: none;
-  border: 1px solid #ababab;
+  border: 1px solid #b3b3b3;
   background-color: white;
   z-index: 1000;
 }
@@ -238,17 +238,21 @@ button:focus, input:focus {
   height: 100vh;
 }
 
-footer {
+.footer {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+
+.footer-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px auto;
-  padding: 20px  0;
+  padding: 20px 0;
   max-width: 1200px;
   border-top: 1px solid #d9d9d9;
 }
 
-footer h3 {
+.footer-navigation h3 {
   font-size: 16px;
   font-weight: 700;
   margin: 30px 0;
@@ -270,5 +274,14 @@ footer h3 {
   font-size: 14px;
   font-weight: 600;
   color: #333333;
+}
+
+.footer-legal-logo {
+  margin: 30px 0;
+}
+
+.footer-legal-text {
+  font-size: 14px;
+  color: #b3b3b3;
 }
 /*# sourceMappingURL=style.css.map */

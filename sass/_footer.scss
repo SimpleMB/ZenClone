@@ -1,31 +1,45 @@
-footer {
-  display: flex;
+.footer {
   margin: 100px auto;
-  padding: 20px  0;
+  max-width: $desktop-width;
+}
+
+.footer-navigation {
+  display: flex;
+
+  padding: 20px 0;
   max-width: $desktop-width;
   border-top: 1px solid $accent-gray-color;
 
   h3 {
-     font-size: $font-size-menu;
-     font-weight: $font-bold;
-     margin: 30px 0;
+    font-size: $font-size-menu;
+    font-weight: $font-bold;
+    margin: 30px 0;
   }
 }
 
 .footer-list {
-    width: 200px;
-    list-style: none;
+  width: 200px;
+  list-style: none;
 }
 
 .footer-element {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-link {
-    display: block;
-    padding: 5px 10px 5px 0;
-    text-decoration: none;
+  display: block;
+  padding: 5px 10px 5px 0;
+  text-decoration: none;
+  font-size: $font-size-footer;
+  font-weight: $font-semibold;
+  color: $primary-black-color;
+}
+
+.footer-legal-logo {
+    margin: 30px 0;
+}
+
+.footer-legal-text {
     font-size: $font-size-footer;
-    font-weight: $font-semibold;
-    color: $primary-black-color
+    color: $primary-gray-color;
 }
