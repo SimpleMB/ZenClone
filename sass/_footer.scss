@@ -1,2 +1,30 @@
-.footer-icon {
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 70px  0 100px;
+  max-width: $desktop-width;
+
+  h3 {
+     font-size: $font-size-menu;
+     font-weight: $font-bold;
+     margin: 30px 0;
+  }
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-element {
+    margin-bottom: 5px;
+}
+
+.footer-link {
+    display: block;
+    padding: 5px 10px 5px 0;
+    text-decoration: none;
+    font-size: $font-size-footer;
+    font-weight: $font-semibold;
+    color: $primary-black-color
 }
