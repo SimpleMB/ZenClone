@@ -3,7 +3,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 40px 0;
+  padding: 40px 20px;
   background-color: $secondary-light-color;
 }
 
@@ -37,17 +37,26 @@
   margin-left: 30px;
   list-style: none;
 
-  .menu-link {
-    margin: 0 10px;
-
-    a {
-      padding: 10px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: $font-semibold;
-      color: $primary-black-color;
-    }
+  @media (max-width: $breakpoint-menu) {
+    display: none;
   }
+}
+
+.menu-link {
+  margin: 0 10px;
+
+  a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: $font-semibold;
+    color: $primary-black-color;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
 }
 
 .right-side--btn {

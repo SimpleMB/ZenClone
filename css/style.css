@@ -130,7 +130,7 @@ button:focus, input:focus {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 40px 0;
+  padding: 40px 20px;
   background-color: white;
 }
 
@@ -180,16 +180,31 @@ button:focus, input:focus {
   list-style: none;
 }
 
-.menu-list .menu-link {
+@media (max-width: 1010px) {
+  .menu-list {
+    display: none;
+  }
+}
+
+.menu-link {
   margin: 0 10px;
 }
 
-.menu-list .menu-link a {
+.menu-link a {
   padding: 10px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
   color: #333333;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .right-side--btn {
