@@ -1,6 +1,7 @@
 .footer {
   margin: 100px auto;
   max-width: $desktop-width;
+  overflow: hidden;   // TODO: for develpment purposes only
 }
 
 .footer-navigation {

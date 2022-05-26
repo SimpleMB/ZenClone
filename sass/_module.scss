@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding: 70px 20px 0;
   max-width: $desktop-width;
-  // height: 750px;
+  overflow: hidden;  // TODO: for delvelopment pusrposes only
 }
 
 .module-middle {

@@ -8,6 +8,7 @@
 }
 
 .top-menu-logo {
+  width: 150px;
   transition: all 1s;
 }
 
@@ -25,10 +26,19 @@
   max-width: $desktop-width;
   margin: 0 auto;
   width: 100%;
+
+  @media (max-width: $breakpoint-menu) {
+    flex-direction: column;
+    // align-items: baseline;
+  }
 }
 
 .left-side {
   display: flex;
+
+  @media (max-width: $breakpoint-menu) {
+    flex-direction: column;
+  }
 }
 
 .menu-list {
@@ -38,7 +48,10 @@
   list-style: none;
 
   @media (max-width: $breakpoint-menu) {
-    display: none;
+    // display: none;
+    flex-direction: column;
+    margin: 20px 0;
+    border-bottom: 1px solid $primary-gray-color;
   }
 }
 
@@ -52,11 +65,19 @@
     font-weight: $font-semibold;
     color: $primary-black-color;
   }
+
+  @media (max-width: $breakpoint-menu) {
+    margin: 10px;
+  }
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
+
+  @media (max-width: $breakpoint-menu) {
+    flex-direction: column;
+  }
 }
 
 .right-side--btn {
