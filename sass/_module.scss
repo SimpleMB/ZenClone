@@ -9,19 +9,27 @@
 
   @media (max-width: $breakpoint-module) {
     flex-direction: column;
+    padding: 40px 10px;
+
+    .module-message:nth-child(1) {
+      order: 1;
+    }
   }
 }
 
 .module-middle {
   display: block;
   justify-content: center;
-  height: unset;
   margin-bottom: 50px;
 
   .module-message {
     margin: 70px auto;
     width: 50%;
     text-align: center;
+
+    @media (max-width: $breakpoint-module) {
+      width: 90%;
+    }
   }
 
   .module-partners {
@@ -73,7 +81,7 @@
   }
 
   @media (max-width: $breakpoint-module) {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -84,6 +92,7 @@
   }
 
   @media (max-width: $breakpoint-module) {
+    margin-top: 70px;
     width: 80%;
   }
 }
