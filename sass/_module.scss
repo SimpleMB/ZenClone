@@ -6,6 +6,10 @@
   padding: 70px 20px 0;
   max-width: $desktop-width;
   overflow: hidden;  // TODO: for delvelopment pusrposes only
+
+  @media (max-width: $breakpoint-module) {
+    flex-direction: column;
+  }
 }
 
 .module-middle {
@@ -67,12 +71,20 @@
     line-height: 150%;
     font-size: $font-size-normal;
   }
+
+  @media (max-width: $breakpoint-module) {
+    width: 80%;
+  }
 }
 
 .module-img {
   width: 50%;
   img {
     width: 100%;
+  }
+
+  @media (max-width: $breakpoint-module) {
+    width: 80%;
   }
 }
 

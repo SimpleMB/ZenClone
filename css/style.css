@@ -35,6 +35,15 @@ button:focus, input:focus {
   overflow: hidden;
 }
 
+@media (max-width: 740px) {
+  .module {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .module-middle {
   display: block;
   -webkit-box-pack: center;
@@ -104,12 +113,24 @@ button:focus, input:focus {
   font-size: 18px;
 }
 
+@media (max-width: 740px) {
+  .module-message {
+    width: 80%;
+  }
+}
+
 .module-img {
   width: 50%;
 }
 
 .module-img img {
   width: 100%;
+}
+
+@media (max-width: 740px) {
+  .module-img {
+    width: 80%;
+  }
 }
 
 .get-app {
@@ -133,6 +154,7 @@ button:focus, input:focus {
   left: 0;
   padding: 40px 20px;
   background-color: white;
+  visibility: hidden;
 }
 
 .top-menu-logo {
@@ -291,6 +313,12 @@ button:focus, input:focus {
 
 .hero {
   height: 100vh;
+}
+
+@media (max-width: 740px) {
+  .hero {
+    height: unset;
+  }
 }
 
 .footer {

@@ -1,3 +1,7 @@
 .hero {
   height: 100vh;
+
+  @media (max-width: $breakpoint-module) {
+    height: unset;
+  }
 }
