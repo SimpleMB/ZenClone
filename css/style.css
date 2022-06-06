@@ -169,6 +169,12 @@ button:focus, input:focus {
   visibility: hidden;
 }
 
+@media (max-width: 1010px) {
+  .menu-container-fixed {
+    min-height: 100vh;
+  }
+}
+
 .top-menu-logo {
   width: 150px;
   -webkit-transition: all 1s;
