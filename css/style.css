@@ -349,7 +349,9 @@ button:focus, input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 40px;
   max-width: 1200px;
   border-top: 1px solid #d9d9d9;
 }
@@ -360,8 +362,17 @@ button:focus, input:focus {
   margin: 30px 0;
 }
 
-.footer-list {
+.footer-column {
   width: 200px;
+}
+
+@media (max-width: 740px) {
+  .footer-column {
+    width: 50%;
+  }
+}
+
+.footer-list {
   list-style: none;
 }
 
@@ -379,10 +390,11 @@ button:focus, input:focus {
 }
 
 .footer-legal-logo {
-  margin: 30px 0;
+  margin: 30px 40px;
 }
 
 .footer-legal-text {
+  margin: 0 40px;
   font-size: 14px;
   color: #b3b3b3;
 }
