@@ -5,10 +5,11 @@
   left: 0;
   padding: 40px 20px;
   background-color: $secondary-light-color;
-  visibility: hidden; // TODO: for dev purposes only
+  // visibility: hidden; // TODO: for dev purposes only
 
   @media (max-width: $breakpoint-menu) {
-    min-height: 100vh;
+    padding: 10px;
+    // min-height: 100vh;
   }
 }
 
@@ -33,7 +34,7 @@
   width: 100%;
 
   @media (max-width: $breakpoint-menu) {
-    flex-direction: column;
+    // flex-direction: column;
   }
 }
 
@@ -52,7 +53,7 @@
   list-style: none;
 
   @media (max-width: $breakpoint-menu) {
-    // display: none;
+    display: none; // TODO: toggle
     flex-direction: column;
     margin: 20px 0;
     border-bottom: 1px solid $primary-gray-color;
